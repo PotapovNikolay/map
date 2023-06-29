@@ -1,0 +1,44 @@
+
+$small: 500px;
+$tablet: 1000px;
+
+.sidebar{
+
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #8e8e8e75;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 20%;
+    top:1rem;
+    left: 1rem;
+    bottom:2rem;
+
+}
+
+.sidebar__close{
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border: 0 solid;
+}
+
+@media screen and (max-width: $small) {
+
+    .sidebar{
+        width: 75%;
+        bottom:auto
+    }
+ }
+
+ @media screen and (min-width:$small) and (max-width: $tablet) {
+
+     .sidebar {
+        width: 40%;
+        bottom: auto
+     }
+ }
