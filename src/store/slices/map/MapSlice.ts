@@ -82,7 +82,7 @@ export const mapSlice = createSlice({
     .addCase(addPoint.fulfilled, (state, {payload}) => {
         state.points.push(payload)
     })    
-    .addCase(addPoint.rejected, (state, {payload}) => {
+    .addCase(addPoint.rejected, (state ) => {
        
         state.error = 'Вы заполнили не все поля'
     })   
